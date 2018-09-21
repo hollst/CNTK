@@ -45,7 +45,7 @@ namespace CNTK.CSTrainingExamples
                 trainer.TrainMinibatch(
                     new Dictionary<Variable, Value>() { { featureVariable, features }, { labelVariable, labels } }, device);
 #pragma warning restore 618
-                TestHelper.PrintTrainingProgress(trainer, minibatchCount, updatePerMinibatches);
+                //TestHelper.PrintTrainingProgress(trainer, minibatchCount, updatePerMinibatches);
             }
 
             // test and validate the model
